@@ -1,0 +1,11 @@
+root = "."
+tmp_dir = "tmp"
+
+[build]
+cmd = "go build -gcflags='all=-N -l' -o ./tmp/main ."
+bin = "tmp/main"
+delay = 1000
+full_bin = "./tmp/main"
+
+[log]
+color = true

@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug in Container (Go)",
+      "type": "go",
+      "request": "launch",
+      "mode": "debug",
+      "program": "${workspaceFolder}",
+      "dlvFlags": ["--listen=:40000"],
+      "substitutePath": [
+        {
+          "from": "${workspaceFolder}",
+          "to": "/app"  // Ajusta según la ruta en tu contenedor
+        }
+      ]
+    }
+  ]
+}
