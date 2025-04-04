@@ -1,6 +1,6 @@
 # Plantilla Base para Desarrollo en Go con Docker y VS Code
 
-Este archivo README documenta la plantilla base oficial para cualquier desarrollo en Go dentro de contenedores Docker, diseñada para integrarse fácilmente con Visual Studio Code, proporcionar recarga automática del código fuente, y soportar depuración remota mediante Delve.
+Este archivo README documenta la plantilla base para cualquier desarrollo en Go dentro de contenedores Docker, diseñada para integrarse fácilmente con Visual Studio Code, proporcionar recarga automática del código fuente, y soportar depuración remota mediante Delve.
 
 Esta configuración está pensada para reutilizarse en múltiples módulos o aplicaciones independientes en Go, especialmente dentro de arquitecturas modulares o basadas en microservicios.
 
@@ -139,4 +139,4 @@ Puedes clonar esta plantilla para crear nuevos módulos en Go. Solo necesitas:
 
 ---
 
-Esta plantilla es ahora la base oficial para todos los desarrollos en Go dentro del ecosistema de contenedores Docker + VS Code.
+Esta plantilla es ahora la base para todos los desarrollos en Go dentro del ecosistema de contenedores Docker + VS Code.
