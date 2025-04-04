@@ -1,7 +1,7 @@
 {
   "name": "Go Dev – API Manager",
   "dockerComposeFile": ["../docker-compose.yml"],
-  "service": "api-manager",
+  "service": "__MODULE_NAME__",
   "workspaceFolder": "/app",
   "overrideCommand": true,
   "customizations": {
@@ -14,7 +14,7 @@
       "extensions": ["golang.go"]
     }
   },
-  "remoteUser": "root",  // Cambiado de vscode a root
-  "forwardPorts": [8080, 40000],
+  "remoteUser": "root",
+  "forwardPorts": [5235, 40000],
   "postCreateCommand": "go mod download"
 }

@@ -19,7 +19,7 @@ RUN go mod tidy
 RUN go build -gcflags="all=-N -l" -o /app/main .
 
 # Puerto para la app (8080) y para debugging (40000)
-EXPOSE 8080 40000
+EXPOSE 5235 40000
 
 # Comando para iniciar ambos servicios (Air + Delve)
 CMD ["sh", "-c", "air -c .air.toml & dlv debug --headless --listen=:40000 --api-version=2 --accept-multiclient --continue --output=/tmp/__debug_bin ./main.go"]

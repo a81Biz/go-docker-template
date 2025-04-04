@@ -1,20 +1,19 @@
 version: "3.8"
 
 services:
-  api-manager:
+  __MODULE_NAME__:
     build: .
+    container_name: __MODULE_NAME__
     volumes:
       - .:/app
     working_dir: /app
     ports:
-      - "8080:8080"    # Puerto de la aplicación
-      - "40000:40000"  # Puerto para el debugger
+      - "40000:40000"
+    expose:
+      - "5235"
     networks:
       - samm-network
-    # Opcional: descomentar si necesitas variables de entorno
-    # environment:
-    #   - ENV=development
-
+      
 networks:
   samm-network:
     external: true
